@@ -80,6 +80,11 @@ button{
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    font-size: x-large;
+  }
+
+  p{
+      font-size: x-large;
   }
   
   /* The Close Button */
@@ -96,3 +101,4 @@ button{
     text-decoration: none;
     cursor: pointer;
   }
+
