@@ -89,7 +89,6 @@ function draw() {
 const checkAuth = (objectsWithConfidences, passObject) => {
   if(objectsWithConfidences.person && objectsWithConfidences[passObject]){
       if(objectsWithConfidences.person > 0.51 && objectsWithConfidences[passObject] >= 0.55){
-        alert("Accepted");
         route("/home");
       }
   }
