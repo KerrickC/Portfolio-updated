@@ -29,6 +29,10 @@ const ob = new RandomObject();
 
 function setup() {
 
+  if( /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    route("/home");
+  }
+
   var canvas = createCanvas(640, 480);
   video = createCapture(VIDEO, videoReady);
   video.size(640, 480);
@@ -92,6 +96,7 @@ const checkAuth = (objectsWithConfidences, passObject) => {
         route("/home");
       }
   }
+  
 }
 
 const route = (path) => {
